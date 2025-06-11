@@ -1,0 +1,214 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 60px 0 30px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #ffd000;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease;
+}
+
+header p {
+    font-size: 18px;
+    color: #ccc;
+    animation: fadeInUp 1s ease;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #ffaa00;
+    animation: fadeIn 2s ease;
+}
+
+section h2 {
+    color: #ffd900;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #1f1f1f;
+    color: #ffd900;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background-color: #ffd900;
+    color: #1f1f1f;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+    color: #ffd900;
+    margin-bottom: 10px;
+}
+
+.contato a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+button, a {
+  cursor: pointer;
+}
+/* Estilo geral para links e botões */
+a, button {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+a:hover, button:hover {
+  transform: scale(1.05); /* Leve aumento no hover */
+}
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1); /* Cor fosca */
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+}
+.glitch {
+  position: relative;
+  font-size: 2.5em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: glitch 1s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  background: black;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+  animation: glitchTop 1s infinite linear alternate-reverse;
+  color: #00ffea; /* ciano */
+}
+
+.glitch::after {
+  animation: glitchBottom 1s infinite linear alternate-reverse;
+  color: #ff00c1; /* magenta */
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  20% { text-shadow: -2px 0 red, 2px 0 blue; }
+  40% { text-shadow: 2px 0 red, -2px 0 blue; }
+  60% { text-shadow: -2px 0 red, 2px 0 blue; }
+  80% { text-shadow: 2px 0 red, -2px 0 blue; }
+  100% { text-shadow: 0 0 red, 0 0 blue; }
+}
+
+@keyframes glitchTop {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(0, 9999px, 5px, 0); }
+  20% { clip: rect(0, 9999px, 0, 0); }
+  30% { clip: rect(0, 9999px, 6px, 0); }
+  40% { clip: rect(0, 9999px, 0, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@keyframes glitchBottom {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(10px, 9999px, 15px, 0); }
+  20% { clip: rect(5px, 9999px, 20px, 0); }
+  30% { clip: rect(15px, 9999px, 25px, 0); }
+  40% { clip: rect(10px, 9999px, 30px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
