@@ -288,10 +288,48 @@ body {
 }
 
 .nav-menu li a:hover {
-  color: #00ffff;
+  color: #ff0000;
 }
 
 /* Evita sobreposição do conteúdo com a navbar */
 main, header, section {
   margin-top: 80px;
+}
+#calculadora {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+#calculadora input {
+  margin: 5px;
+  padding: 10px;
+  width: 40%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.botoes-operacoes button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.botoes-operacoes button:hover {
+  background-color: #555;
+}
+
+#resultado {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
