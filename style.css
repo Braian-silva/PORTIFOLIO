@@ -228,3 +228,70 @@ a:hover, button:hover {
   font-size: 1.5rem;
   text-align: center;
 }
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+
+.logo-text {
+  font-family: 'Righteous', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #00ffff;
+}
+
+/* Evita sobreposição do conteúdo com a navbar */
+main, header, section {
+  margin-top: 80px;
+}
