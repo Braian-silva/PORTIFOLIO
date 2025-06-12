@@ -24,10 +24,10 @@
       <span class="logo-text">Fantasminha Dev</span>
     </div>
     <ul class="nav-menu">
-      <li><a href="#funcionais">Funciona</a></li>
-      
-      <li><a href="#amigos">Amigos</a></li>
-    </ul>
+  <li><a href="projetos em desenvolvimento"> </a></li>
+  <li><a href="#amigos">Amigos</a></li>
+  <li><a href="https://github.com/Braian-silva/PORTIFOLIO/tree/main" target="_blank">projetos</a></li>
+</ul>
   </div>
 </nav>
 
@@ -76,6 +76,50 @@
                 </div>
             </div>
         </div>
+      <div id="calculadora" class="card">
+  <h3>Calculadora Interativa</h3>
+  <p>Digite dois números e escolha a operação:</p>
+  <input type="number" id="num1" placeholder="Primeiro número">
+  <input type="number" id="num2" placeholder="Segundo número">
+  <div class="botoes-operacoes">
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+  </div>
+  <p id="resultado">Resultado: --</p>
+</div>
+<script>
+  function calcular(op) {
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
+    let resultado;
+
+    if (isNaN(num1) || isNaN(num2)) {
+      resultado = "Digite dois números válidos.";
+    } else {
+      switch (op) {
+        case '+':
+          resultado = num1 + num2;
+          break;
+        case '-':
+          resultado = num1 - num2;
+          break;
+        case '*':
+          resultado = num1 * num2;
+          break;
+        case '/':
+          resultado = num2 !== 0 ? num1 / num2 : 'Erro: divisão por zero';
+          break;
+        default:
+          resultado = "Operação inválida.";
+      }
+    }
+
+    document.getElementById('resultado').innerText = "Resultado: " + resultado;
+  }
+</script>
+
     </section>
 
     <section class="contato">
