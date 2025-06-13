@@ -20,9 +20,9 @@ Este repositório tem como objetivo reunir meus principais projetos, conheciment
 
 | Projeto | Descrição | Tecnologias |
 |--------|------------|-------------|
-| [Nome do Projeto 1](link) | Pequena descrição do que ele faz. | HTML, CSS, JS |
-| [Nome do Projeto 2](link) | Automação de tarefas para... | Python, Shell Script |
-| [Nome do Projeto 3](link) | API RESTful com autenticação JWT. | Node.js, Express |
+| [[em desenvolvimento](link) | Pequena descrição do que ele faz. | HTML, CSS, JS |
+| [em desenvolvimento](link) | Automação de tarefas para... | Python, Shell Script |
+| [em desenvolvimento](link) | API RESTful com autenticação JWT. | Node.js, Express |
 
 > *Adicione quantos projetos quiser com links e descrições breves.*
 
@@ -44,7 +44,7 @@ Este repositório tem como objetivo reunir meus principais projetos, conheciment
 Se quiser entrar em contato ou saber mais:
 
 - E-mail: braiansilva76g@gmail.com
-- LinkedInhttps://www.linkedin.com/in/braian-apolinario-da-silva-266b001aa :
+- LinkedIhttps://www.linkedin.com/in/braian-apolinario-da-silva-266b001aa :
 
 ---
 
