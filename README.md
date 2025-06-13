@@ -20,7 +20,7 @@ Este repositório tem como objetivo reunir meus principais projetos, conheciment
 
 | Projeto | Descrição | Tecnologias |
 |--------|------------|-------------|
-| [[em desenvolvimento](link) | Pequena descrição do que ele faz. | HTML, CSS, JS |
+| [em desenvolvimento](link) | Pequena descrição do que ele faz. | HTML, CSS, JS |
 | [em desenvolvimento](link) | Automação de tarefas para... | Python, Shell Script |
 | [em desenvolvimento](link) | API RESTful com autenticação JWT. | Node.js, Express |
 
