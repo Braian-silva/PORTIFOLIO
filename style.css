@@ -333,3 +333,33 @@ main, header, section {
   font-weight: bold;
   font-size: 18px;
 }
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.logo-text {
+  animation: piscar 1.9s infinite;
+}
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Aplica o efeito ao texto */
+.logo-text {
+  animation: piscar 1.9s infinite;
+}
+
+/* Aplica o efeito à imagem */
+.logo-img {
+  animation: piscar 1.9s infinite;
+}
