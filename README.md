@@ -9,7 +9,7 @@ Este repositório tem como objetivo reunir meus principais projetos, conheciment
 
 ## 🧠 Sobre mim
 
-- 💻 Profissional de TI com atuação em [coloque aqui: desenvolvimento web, suporte técnico, DevOps, etc.]
+- 💻 Profissional de TI com atuação em desenvolvimento web, suporte técnico, DevOps, etc.
 - 🎯 Apaixonado por resolver problemas com tecnologia
 - 🔒 Interessado em segurança da informação, automação e boas práticas de desenvolvimento
 - 🌐 Buscando constante evolução profissional e aprendizado contínuo
